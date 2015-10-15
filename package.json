@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/davidguttman/lkqd-api/issues"
   },
-  "homepage": "https://github.com/davidguttman/lkqd-api#readme"
+  "homepage": "https://github.com/davidguttman/lkqd-api#readme",
+  "devDependencies": {
+    "standard": "^5.3.1"
+  },
+  "dependencies": {
+    "jsonist": "^1.2.0"
+  }
 }
