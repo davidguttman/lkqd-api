@@ -1,0 +1,19 @@
+{
+  "name": "lkqd-api",
+  "version": "1.0.0",
+  "description": "A simple module for accessing LKQD report data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidguttman/lkqd-api.git"
+  },
+  "author": "David Guttman <david@guttman.io> (http://davidguttman.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davidguttman/lkqd-api/issues"
+  },
+  "homepage": "https://github.com/davidguttman/lkqd-api#readme"
+}
