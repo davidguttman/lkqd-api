@@ -1,6 +1,6 @@
 {
   "name": "lkqd-api",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "A simple module for accessing LKQD report data.",
   "main": "index.js",
   "scripts": {
