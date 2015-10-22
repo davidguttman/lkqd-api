@@ -24,7 +24,7 @@ function createUrl (creds) {
 function getDefaultOpts () {
   return {
     timeDimension: 'DAILY',
-    reportType: ['SOURCE'],
+    reportType: ['SITE'],
     reportFormat: 'JSON',
     timezone: 'UTC'
   }
