@@ -22,9 +22,9 @@ module.exports = function (creds, date, cb) {
 }
 
 function createUrl (creds) {
-  var host = creds.host || 'api.lkqd.com/reports'
+  var host = creds.host || 'api.lkqd.com'
   var protocol = creds.protocol || 'https'
-  return [ protocol + '://', creds.key, ':', creds.secret, '@' + host].join('')
+  return [ protocol + '://', creds.key, ':', creds.secret, '@' + host + '/reports'].join('')
 }
 
 function getDefaultOpts () {
