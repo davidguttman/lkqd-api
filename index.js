@@ -1,3 +1,4 @@
+var get = require('lodash.get')
 var jsonist = require('jsonist')
 
 module.exports = function (creds, date, cb) {
@@ -12,7 +13,10 @@ module.exports = function (creds, date, cb) {
       return cb(new Error(['statusCode', res.statusCode, opts.url].join(' ')))
     }
 
-    var rows = ((body || {}).data || {}).entries
+    var errMsg = get(body, 'errors.0.failure')
+    if (errMsg) return cb(new Error(errMsg))
+
+    var rows = get(body, 'data.entries')
     cb(null, rows)
   })
 }
